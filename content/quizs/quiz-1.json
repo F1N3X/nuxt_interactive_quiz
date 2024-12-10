@@ -1,0 +1,42 @@
+{
+    "slug": "quiz-1",
+    "title": "General Knowledge Quiz",
+    "questions": [
+        {
+            "text": "What is the capital of Germany?",
+            "answers": [
+                {"text": "Munich", "isCorrect": false},
+                {"text": "Hamburg", "isCorrect": false},
+                {"text": "Berlin", "isCorrect": true},
+                {"text": "Cologne", "isCorrect": false}
+            ]
+        },
+        {
+            "text": "Which planet is known as the Red Planet?",
+            "answers": [
+                {"text": "Venus", "isCorrect": false},
+                {"text": "Mars", "isCorrect": true},
+                {"text": "Jupiter", "isCorrect": false},
+                {"text": "Saturn", "isCorrect": false}
+            ]
+        },
+        {
+            "text": "Who wrote 'Romeo and Juliet'?",
+            "answers": [
+                {"text": "William Shakespeare", "isCorrect": true},
+                {"text": "Charles Dickens", "isCorrect": false},
+                {"text": "Mark Twain", "isCorrect": false},
+                {"text": "Ernest Hemingway", "isCorrect": false}
+            ]
+        },
+        {
+            "text": "What is the largest ocean on Earth?",
+            "answers": [
+                {"text": "Atlantic Ocean", "isCorrect": false},
+                {"text": "Indian Ocean", "isCorrect": false},
+                {"text": "Pacific Ocean", "isCorrect": true},
+                {"text": "Arctic Ocean", "isCorrect": false}
+            ]
+        }
+    ]
+}

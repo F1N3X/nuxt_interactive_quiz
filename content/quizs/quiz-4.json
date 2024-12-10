@@ -1,0 +1,42 @@
+{
+    "slug": "quiz-4",
+    "title": "Sports Quiz",
+    "questions": [
+        {
+            "text": "In which year were the first modern Olympic Games held?",
+            "answers": [
+                {"text": "1900", "isCorrect": false},
+                {"text": "1896", "isCorrect": true},
+                {"text": "1850", "isCorrect": false},
+                {"text": "1888", "isCorrect": false}
+            ]
+        },
+        {
+            "text": "Which country has won the most FIFA World Cups?",
+            "answers": [
+                {"text": "Germany", "isCorrect": false},
+                {"text": "Italy", "isCorrect": false},
+                {"text": "Brazil", "isCorrect": true},
+                {"text": "Argentina", "isCorrect": false}
+            ]
+        },
+        {
+            "text": "How many players are there in a rugby union team?",
+            "answers": [
+                {"text": "11", "isCorrect": false},
+                {"text": "15", "isCorrect": true},
+                {"text": "7", "isCorrect": false},
+                {"text": "13", "isCorrect": false}
+            ]
+        },
+        {
+            "text": "What is the national sport of Japan?",
+            "answers": [
+                {"text": "Sumo Wrestling", "isCorrect": true},
+                {"text": "Karate", "isCorrect": false},
+                {"text": "Judo", "isCorrect": false},
+                {"text": "Baseball", "isCorrect": false}
+            ]
+        }
+    ]
+}

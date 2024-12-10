@@ -1,0 +1,42 @@
+{
+    "slug": "quiz-2",
+    "title": "Science and Nature Quiz",
+    "questions": [
+        {
+            "text": "What is the chemical symbol for water?",
+            "answers": [
+                {"text": "H2O", "isCorrect": true},
+                {"text": "O2", "isCorrect": false},
+                {"text": "CO2", "isCorrect": false},
+                {"text": "NaCl", "isCorrect": false}
+            ]
+        },
+        {
+            "text": "What gas do plants absorb from the atmosphere?",
+            "answers": [
+                {"text": "Carbon Dioxide", "isCorrect": true},
+                {"text": "Oxygen", "isCorrect": false},
+                {"text": "Nitrogen", "isCorrect": false},
+                {"text": "Hydrogen", "isCorrect": false}
+            ]
+        },
+        {
+            "text": "What is the hardest natural substance on Earth?",
+            "answers": [
+                {"text": "Gold", "isCorrect": false},
+                {"text": "Diamond", "isCorrect": true},
+                {"text": "Iron", "isCorrect": false},
+                {"text": "Silver", "isCorrect": false}
+            ]
+        },
+        {
+            "text": "What is the speed of light?",
+            "answers": [
+                {"text": "299,792 km/s", "isCorrect": true},
+                {"text": "150,000 km/s", "isCorrect": false},
+                {"text": "1,000,000 km/s", "isCorrect": false},
+                {"text": "300 km/s", "isCorrect": false}
+            ]
+        }
+    ]
+}
