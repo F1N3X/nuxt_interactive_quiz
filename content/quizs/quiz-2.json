@@ -28,15 +28,6 @@
                 {"text": "Iron", "isCorrect": false},
                 {"text": "Silver", "isCorrect": false}
             ]
-        },
-        {
-            "text": "What is the speed of light?",
-            "answers": [
-                {"text": "299,792 km/s", "isCorrect": true},
-                {"text": "150,000 km/s", "isCorrect": false},
-                {"text": "1,000,000 km/s", "isCorrect": false},
-                {"text": "300 km/s", "isCorrect": false}
-            ]
         }
     ]
 }

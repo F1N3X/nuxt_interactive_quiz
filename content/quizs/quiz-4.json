@@ -37,6 +37,14 @@
                 {"text": "Judo", "isCorrect": false},
                 {"text": "Baseball", "isCorrect": false}
             ]
+        },
+        {
+            "text": "What is the maximum score in a single frame of snooker?",
+            "answers": [
+                {"text": "147", "isCorrect": true},
+                {"text": "155", "isCorrect": false},
+                {"text": "140", "isCorrect": false}
+            ]
         }
     ]
 }
