@@ -6,6 +6,10 @@
         quizDatas.answer(value)
     }
 
+    function reset(){
+        quizDatas.reset()
+    }
+
 </script>
 
 
@@ -29,6 +33,14 @@
 
             <div>
                     Question {{ quizDatas.quiz.step }} / {{ quizDatas.quiz.questionNumber }}
+            </div>
+
+            <div>
+                <input 
+                    type="submit" 
+                    value="Reset" 
+                    @click="reset()"
+                />
             </div>
         </div>
     </div>

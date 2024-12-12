@@ -13,8 +13,14 @@ export default function () {
         quiz.step++
     }
 
+    const reset = () => {
+        quiz.step = 1
+        quiz.score = 0
+    }
+
     return {
         quiz,
         answer,
+        reset,
     }
 }
