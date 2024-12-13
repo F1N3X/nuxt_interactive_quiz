@@ -5,7 +5,7 @@
                 <h1 class="font-bold text-2xl">Nuxt Interactive Quiz</h1>
 
                 <NuxtLink :to="`/`">
-                    <button class="bg-blue-500 p-1 rounded-xl">Home</button>
+                    <button class="bg-blue-500 hover:bg-blue-600 p-1 rounded-xl">Home</button>
                 </NuxtLink>
             </div>
         </nav>
