@@ -15,49 +15,47 @@
 
 <template>
     <div>
-    <div>{{ quizDatas }}</div>
+        <div v-if="quizDatas.quiz.step-1 < quizDatas.quiz.questionNumber">
 
-    <div v-if="quizDatas.quiz.step-1 < quizDatas.quiz.questionNumber">
-
-        <h1>Question : {{ [quizDatas["quiz"]["questions"]]["text"] }} </h1>
-
-        <div>
-            <div v-for="(answer, index) in quizDatas.quiz.quizData.questions[quizDatas.quiz.step-1].answers" :key="index">
-                <input 
-                    type="submit" 
-                    :value="answer.text" 
-                    @click="answerQuestion(answer.isCorrect)"
-                />
-            </div>
+            <h1>Question : {{ quizDatas.quiz.quizData.questions[quizDatas.quiz.step-1].text }} </h1>
 
             <div>
-                    Question {{ quizDatas.quiz.step }} / {{ quizDatas.quiz.questionNumber }}
-            </div>
+                <div v-for="(answer, index) in quizDatas.quiz.quizData.questions[quizDatas.quiz.step-1].answers" :key="index">
+                    <input 
+                        type="submit" 
+                        :value="answer.text" 
+                        @click="answerQuestion(answer.isCorrect)"
+                    />
+                </div>
 
-            <div>
-                <input 
-                    type="submit" 
-                    value="Reset" 
-                    @click="reset()"
-                />
+                <div>
+                        Question {{ quizDatas.quiz.step }} / {{ quizDatas.quiz.questionNumber }}
+                </div>
 
-                <NuxtLink 
-                :to="`/`" 
-                >
-                <input type="submit" value="Other quiz" />
-            </NuxtLink>
+                <div>
+                    <input 
+                        type="submit" 
+                        value="Reset" 
+                        @click="reset()"
+                    />
+
+                    <NuxtLink 
+                    :to="`/`" 
+                    >
+                    <input type="submit" value="Other quiz" />
+                </NuxtLink>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div v-else>
-        <h1>Quiz is over</h1>
-        <h2>Your score is {{ quizDatas.quiz.score }} / {{ quizDatas.quiz.questionNumber * 5 }}</h2>
-        <NuxtLink 
-            :to="`/`" 
-        >
-            <input type="submit" value="Back to home" />
-        </NuxtLink>
+        <div v-else>
+            <h1>Quiz is over</h1>
+            <h2>Your score is {{ quizDatas.quiz.score }} / {{ quizDatas.quiz.questionNumber * 5 }}</h2>
+            <NuxtLink 
+                :to="`/`" 
+            >
+                <input type="submit" value="Back to home" />
+            </NuxtLink>
+        </div>
     </div>
-</div>
 </template>
