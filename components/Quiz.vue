@@ -2,8 +2,6 @@
     const quizs = await queryContent("quizs").find()
 
     const quizDatas = inject('quizDatas')
-
-    
 </script>
 
 <template>

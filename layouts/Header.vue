@@ -3,9 +3,11 @@
         <nav>
             <div>
                 <h1>Nuxt interactive quiz</h1>
-                <button>
-                    Home
-                </button>
+                <NuxtLink 
+                :to="`/`" 
+            >
+                <button>Home</button>
+            </NuxtLink>
             </div>
         </nav>
 
