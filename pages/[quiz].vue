@@ -1,10 +1,8 @@
 <script setup>
     const { params } = useRoute()
     const quiz = await queryContent(`quizs/${params.quiz}`).findOne()
-    provide('quiz', quiz)
 
-    const quizDatas = useQuiz()
-    quizDatas.quiz.questionNumber = quiz["questions"].length
+    const quizDatas = useQuiz(quiz)
     provide('quizDatas', quizDatas)
 
 

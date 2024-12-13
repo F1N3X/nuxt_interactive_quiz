@@ -1,6 +1,5 @@
 <script setup>
     const quizDatas = inject('quizDatas')
-    const quiz = inject('quiz')
 
     function answerQuestion(value) {
         quizDatas.answer(value)
@@ -20,10 +19,10 @@
 
     <div v-if="quizDatas.quiz.step-1 < quizDatas.quiz.questionNumber">
 
-        <h1>Question : {{ quiz["questions"][quizDatas["quiz"]["step"]-1]["text"] }} </h1>
+        <h1>Question : {{ [quizDatas["quiz"]["questions"]]["text"] }} </h1>
 
         <div>
-            <div v-for="(answer, index) in quiz.questions[quizDatas.quiz.step-1].answers" :key="index">
+            <div v-for="(answer, index) in quizDatas.quiz.quizData.questions[quizDatas.quiz.step-1].answers" :key="index">
                 <input 
                     type="submit" 
                     :value="answer.text" 

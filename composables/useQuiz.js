@@ -1,9 +1,10 @@
-export default function () {
+export default function (quizData) {
     const quiz = reactive({
         step: 1,
-        questionNumber: 0,
+        questionNumber: quizData.questions.length,
         score: 0.0,
         startTime: Date.now(),
+        quizData,
     })
 
     const answer = (value) => {
