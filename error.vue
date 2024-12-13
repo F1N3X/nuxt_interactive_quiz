@@ -1,6 +1,6 @@
 <template>
     <NuxtLayout name="header">
-        <div>
+        <div class="font-montserrat">
             <h2>🤔 What did you mean ?</h2>
             <p>I'm sorry but all I can guive you is this :</p>
             <h1>404</h1>

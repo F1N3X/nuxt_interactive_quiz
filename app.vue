@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="header">
-    <div>
+    <div class="font-montserrat bg-white text-black">
       <NuxtPage />
     </div>
   </NuxtLayout>
