@@ -41,6 +41,12 @@
                     value="Reset" 
                     @click="reset()"
                 />
+
+                <NuxtLink 
+                :to="`/`" 
+                >
+                <input type="submit" value="Other quiz" />
+            </NuxtLink>
             </div>
         </div>
     </div>
