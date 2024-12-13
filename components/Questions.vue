@@ -53,7 +53,7 @@
 
     <div v-else>
         <h1>Quiz is over</h1>
-        <h2>Your score is {{ quizDatas.quiz.score }} / {{ quizDatas.quiz.questionNumber }}</h2>
+        <h2>Your score is {{ quizDatas.quiz.score }} / {{ quizDatas.quiz.questionNumber * 5 }}</h2>
         <NuxtLink 
             :to="`/`" 
         >

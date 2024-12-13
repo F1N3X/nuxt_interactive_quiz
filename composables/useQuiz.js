@@ -2,15 +2,26 @@ export default function () {
     const quiz = reactive({
         step: 1,
         questionNumber: 0,
-        score: 0,
+        score: 0.0,
+        startTime: Date.now(),
     })
 
     const answer = (value) => {
-        console.log(value)
-        if (value === true) {
-            quiz.score++
+        const elapsedTime = (Date.now() - quiz.startTime) / 1000
+
+        let points = 5
+
+        if (elapsedTime > 1) {
+            points = Math.max(5 - (elapsedTime - 1), 1); // Réduction après la première seconde
         }
+
+        if (value === true) {
+            quiz.score += points; // Ajoute les points calculés
+            quiz.score = parseFloat(quiz.score.toFixed(3)); // Garde 3 chiffres après la virgule
+        }
+
         quiz.step++
+        quiz.startTime = Date.now();
     }
 
     const reset = () => {
